@@ -1,3 +1,8 @@
+# nvm
+if [[ -s ~/.nvm/nvm.sh ]];
+  then source ~/.nvm/nvm.sh
+fi
+
 #
 # Executes commands at the start of an interactive session.
 #
