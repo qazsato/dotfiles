@@ -1,30 +1,12 @@
-# nvm
-if [[ -s ~/.nvm/nvm.sh ]];
-  then source ~/.nvm/nvm.sh
-fi
-
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Source Prezto.
+# prezto (https://dev.classmethod.jp/tool/zsh-prezto/)
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-# 右プロンプト非表示
-PROMPT=$BLUE'[${USER}@${HOST}] %(!.#.$) '$WHITE
-RPROMPT=$GREEN'[%~]'$WHITE
-setopt transient_rprompt
-
-# poweline
+# powerline-shell (https://github.com/banga/powerline-shell)
 function powerline_precmd() {
-    PS1="$(~/powerline-shell.py $? --shell zsh 2> /dev/null)"
-  }
+    PS1="$(powerline-shell --shell zsh $?)"
+}
 
 function install_powerline_precmd() {
   for s in "${precmd_functions[@]}"; do
@@ -36,5 +18,10 @@ function install_powerline_precmd() {
 }
 
 if [ "$TERM" != "linux" ]; then
-  install_powerline_precmd
+    install_powerline_precmd
 fi
+
+# 右プロンプト非表示
+PROMPT=$BLUE'[${USER}@${HOST}] %(!.#.$) '$WHITE
+RPROMPT=$GREEN'[%~]'$WHITE
+setopt transient_rprompt
