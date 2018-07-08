@@ -165,7 +165,33 @@
                         ]
                     },
                     {
-                        "description": "Change option+b to back_to_word",
+                        "description": "Change control+u to delete backward from point to the beginning of the line",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": ["left_control"]
+                                    },
+                                    {
+                                        "key_code": "k",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change option+b to move to prev word",
                         "manipulators": [
                             {
                                 "from": {
@@ -187,7 +213,7 @@
                         ]
                     },
                     {
-                        "description": "Change option+f to forward_to_word",
+                        "description": "Change option+f to move to next word",
                         "manipulators": [
                             {
                                 "from": {
