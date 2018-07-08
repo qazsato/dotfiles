@@ -152,9 +152,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -176,9 +173,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -201,9 +195,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
