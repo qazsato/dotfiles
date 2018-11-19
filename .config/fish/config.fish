@@ -9,6 +9,9 @@ set -g theme_display_date no
 ## For Ruby
 rbenv init - | source
 
+## For Python
+set -x PATH $HOME/.pyenv/shims $PATH
+
 ## For peco
 function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
