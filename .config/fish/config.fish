@@ -1,3 +1,8 @@
+alias dcb='docker-compose build'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up -d'
+alias dcp='docker container prune -f & docker image prune -f & docker volume prune -f'
+
 ## For bobthefish
 set -g theme_color_scheme dark
 set -g theme_display_git_ahead_verbose yes
