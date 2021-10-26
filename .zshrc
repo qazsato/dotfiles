@@ -11,3 +11,6 @@ fi
 # For Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
+
+# For Node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
