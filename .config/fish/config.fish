@@ -11,6 +11,10 @@ set -g theme_display_git_dirty_verbose yes
 set -g theme_display_git_master_branch yes
 set -g theme_display_date no
 
+set fish_greeting
+function fish_greeting
+end
+
 ## For Ruby
 rbenv init - | source
 
