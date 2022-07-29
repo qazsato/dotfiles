@@ -4,6 +4,9 @@ alias dcu='docker-compose up -d'
 alias dcp='docker container prune -f & docker image prune -f & docker volume prune -f'
 alias dsp='docker system prune -af'
 
+## For Homebrew
+eval (/opt/homebrew/bin/brew shellenv)
+
 ## For bobthefish
 set -g theme_color_scheme dark
 set -g theme_display_git_ahead_verbose yes
