@@ -38,11 +38,8 @@ function fish_user_key_bindings
   bind \c] peco_select_ghq_repository
 end
 
-## For mysql
-set -g fish_user_paths "/usr/local/opt/mysql@5.7/bin" $fish_user_paths
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /Users/kazuki-sato/ghq/github.com/qazsato/melt-api/node_modules/tabtab/.completions/serverless.fish ]; and . /Users/kazuki-sato/ghq/github.com/qazsato/melt-api/node_modules/tabtab/.completions/serverless.fish
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /Users/kazuki-sato/ghq/github.com/qazsato/melt-api/node_modules/tabtab/.completions/sls.fish ]; and . /Users/kazuki-sato/ghq/github.com/qazsato/melt-api/node_modules/tabtab/.completions/sls.fish
+## For PostgreSQL
+set -g fish_user_paths "/opt/homebrew/opt/postgresql@12/bin" $fish_user_paths
+
+## For MySQL
+set -g fish_user_paths "/opt/homebrew/opt/mysql@5.7/bin" $fish_user_paths
