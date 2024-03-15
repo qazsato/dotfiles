@@ -39,7 +39,11 @@ function fish_user_key_bindings
 end
 
 ## For PostgreSQL
-set -g fish_user_paths "/opt/homebrew/opt/postgresql@12/bin" $fish_user_paths
+set -g fish_user_paths "/opt/homebrew/opt/postgresql@16/bin" $fish_user_paths
 
 ## For MySQL
 set -g fish_user_paths "/opt/homebrew/opt/mysql@5.7/bin" $fish_user_paths
+
+## For tilemaker
+## ref https://github.com/systemed/tilemaker/issues/518#issuecomment-1723337392
+set -gx PATH /opt/homebrew/opt/protobuf@21/bin $PATH
