@@ -37,16 +37,6 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "right_option" },
-                                "to": [{ "shell_command": "shortcuts run \"Pomodoro Timer\"" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "右コマンドキーを押したときにCommand+Shift+5を送信する",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "right_command" },
                                 "to": [
                                     {
                                         "key_code": "5",
